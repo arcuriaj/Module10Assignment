@@ -1,4 +1,6 @@
-﻿namespace Module10Assignment
+﻿using Module10Assignment.Views;
+
+namespace Module10Assignment
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new AddStudentPage());
         }
     }
 }
